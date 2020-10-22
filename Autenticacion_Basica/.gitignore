@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+## metadata de workspace ## 
+/.metadata/
+.metadata

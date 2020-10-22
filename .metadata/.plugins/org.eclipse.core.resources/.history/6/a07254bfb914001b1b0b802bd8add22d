@@ -1,0 +1,6 @@
+package com.autentificacionbasica.app.service;
+
+public interface IProfesorService {
+
+	List<Profesor> findAllProfessors();
+}

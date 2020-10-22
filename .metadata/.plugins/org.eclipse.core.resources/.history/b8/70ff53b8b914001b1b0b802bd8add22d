@@ -1,0 +1,5 @@
+package com.autentificacionbasica.app.service;
+
+public interface IProfesorService {
+
+}
