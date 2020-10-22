@@ -1,0 +1,25 @@
+package com.autentificacionbasica.app.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.autentificacionbasica.app.entity.Profesor;
+import com.autentificacionbasica.app.service.ProfesorServiceImpl;
+
+@RestController
+public class ProfesorRestController {
+
+	@Autowired
+	ProfesorServiceImpl profesorService;
+	
+	@GetMapping("/profesores")
+	public ResponseEntity<List<Profesor>> listAllProfessor(){
+		List<Profesor> profesores = profesorService.findAllProfessors();  
+		
+		return null;
+	}
+}

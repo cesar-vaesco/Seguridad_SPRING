@@ -36,3 +36,5 @@ build/
 ## metadata de workspace ## 
 /.metadata/
 .metadata
+.Desktop.ini
+/.Desktop.ini

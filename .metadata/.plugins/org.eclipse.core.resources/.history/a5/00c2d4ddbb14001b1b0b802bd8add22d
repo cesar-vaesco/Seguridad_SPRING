@@ -1,0 +1,5 @@
+package com.autentificacionbasica.app.controller;
+
+public class ProfesorRestController {
+
+}
