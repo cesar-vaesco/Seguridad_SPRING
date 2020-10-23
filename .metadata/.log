@@ -3193,3 +3193,16 @@ Java Model Exception: Java Model Status [profesorSer {key=Lcom/autentificacionba
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
 !SUBENTRY 3 org.eclipse.jdt.core 4 969 2020-10-22 18:11:05.621
 !MESSAGE profesorSer {key=Lcom/autentificacionbasica/app/controller/ProfesorRestController;.profesorSer)Lcom/autentificacionbasica/app/service/ProfesorServiceImpl;} [in ProfesorRestController [in [Working copy] ProfesorRestController.java [in com.autentificacionbasica.app.controller [in src/main/java [in Autenticacion_Basica]]]]] does not exist
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-10-22 19:36:22.307
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1957)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2092)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)

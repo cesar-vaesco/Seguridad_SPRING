@@ -1,0 +1,5 @@
+package com.autentificacionbasica.app.security;
+
+public class SecurityConfig {
+
+}
